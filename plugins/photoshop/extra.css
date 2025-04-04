@@ -1,0 +1,200 @@
+/* Define theme colors */
+:root {
+  --theme-light: #0385d7;
+  --theme-dark: #546090;
+}
+
+.feature-container {
+    padding: 1px 1px;
+    color: var(--uxp-host-text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.feature-item {
+    background: linear-gradient(to right, rgba(127, 127, 127, 0.4) 40%, rgba(127, 127, 127, 0));
+    cursor: pointer;
+    padding: 8px;
+    width: 100%;
+    margin-top: 8px;
+    border-left: 4px solid var(--theme-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feature-item .go-icon {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+}
+.feature-item:hover {
+    border-left: 4px solid var(--theme-light);
+}
+.feature-item:active {
+    border-left: 4px solid var(--theme-dark);
+}
+.feature-item h3 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--uxp-host-text-color);
+}
+.feature-item h3 span {
+    color: var(--uxp-host-text-color-secondary);
+}
+.feature-item p {
+    margin: 5px 0 0;
+    font-size: 10px;
+    color: var(--uxp-host-text-color-secondary);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.footer-links .sdppp-button {
+    width: 70px;
+    height: 25px;
+    color: var(--uxp-host-text-color);
+    font-size: 12px;
+    margin: 5px 10px;
+}
+
+.footer-links a {
+    color: var(--uxp-host-text-color);
+}
+
+.connect-box .logo {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    color: var(--uxp-host-text-color);
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+.connect-box .logo img {
+    margin-bottom: 2px;
+    height: 40px;
+    width: 40px;
+}
+.header-right-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--uxp-host-text-color);
+}
+
+.sdppp-button {
+    display: inline-block;
+    background: rgba(127, 127, 127, .4);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: var(--uxp-host-text-color);
+    padding: 2px 7px;
+    margin: 5px 3px 0;
+    font-size: 10px;
+}
+.sdppp-button:hover {
+    background: rgba(127, 127, 127, .2);
+}
+.workflow-edit-content sp-picker,
+.workflow-edit-content sp-textarea,
+.workflow-edit-content sp-textfield,
+.workflow-edit-field-title
+{
+    border-color: lightyellow
+}
+.workflow-edit-controls {
+    position: relative;
+}
+
+
+/* Login styles */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 540px;
+    color: var(--uxp-host-text-color);
+    text-align: center;
+}
+
+.login-container .login-container-login-title {
+    text-align: center;
+}
+.login-container .login-container-login-title img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.login-container-login {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+.login-container-login sp-textfield {
+    width: 100%;
+}
+
+
+.login-form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.login-form-item label {
+    font-size: 14px;
+    color: var(--uxp-host-text-color);
+}
+.login-error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+}
+.login-button {
+    background: #0969bf;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.login-button:hover {
+    background: var(--theme-light);
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
